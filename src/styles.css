@@ -79,6 +79,8 @@ footer {
 
 .fahrenheit-symbol {
   display: inline-block;
+  position: fixed;
+  padding-top: 10px;
   font-size: 17px;
   font-weight: lighter;
 }

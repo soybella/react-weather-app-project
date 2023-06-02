@@ -14,7 +14,7 @@ root.render(
     <div className="container p-4">
       <h2> Wire Frame Weather App Project</h2>
       <Form />
-      <Overview />
+      <Overview defaultCity="Sacramento" />
     </div>
     <Footer />
   </React.StrictMode>
