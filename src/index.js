@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./styles.css";
-import Form from "./Form";
 import Overview from "./Overview";
 import Footer from "./Footer";
 import reportWebVitals from "./reportWebVitals";
@@ -13,7 +12,6 @@ root.render(
   <React.StrictMode>
     <div className="container p-4">
       <h2> Wire Frame Weather App Project</h2>
-      <Form />
       <Overview defaultCity="Sacramento" />
     </div>
     <Footer />
