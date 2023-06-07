@@ -72,7 +72,6 @@ footer {
 
 .percentage,
 .wind-mph,
-.high-temp,
 .weather-forecast-date {
   font-weight: bold;
 }
@@ -98,24 +97,32 @@ a .active {
   font-weight: lighter;
 }
 
-.current-weather-icon {
+.weather-icon {
   background-color: #f6f6f8;
   border: 1px solid #f6f6f8;
   border-radius: 50%;
   padding: 0.5px 6px 0.5px 6px;
   margin: 0 auto;
+}
+
+.current-icon {
   width: 75px;
   height: 65px;
 }
 
-.weekdays-info {
+.forecast-icon {
+  width: 65px;
+  height: 55px;
+}
+
+.WeatherForecast {
   font-size: 15px;
   text-align: center;
 }
 
-.weekdays-weather-icons {
-  font-size: 28px;
-  margin: 0 auto;
+.weather-forecast-temperature-max {
+  opacity: 0.6;
+  margin-left: 5px;
 }
 
 .icon {
