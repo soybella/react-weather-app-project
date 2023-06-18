@@ -76,7 +76,7 @@ export default function Overview(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast forecast={weatherData.city} />
       </div>
     );
   } else {
