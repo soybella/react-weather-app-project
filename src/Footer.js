@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="pt-2">
       <a
-        href="https://github.com/soybella/SheCodes-Plus"
+        href="https://github.com/soybella/react-weather-app-project"
         target="_blank"
         rel="noreferrer"
       >
