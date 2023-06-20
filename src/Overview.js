@@ -10,6 +10,7 @@ export default function Overview(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -30,8 +31,6 @@ export default function Overview(props) {
   function handleSubmit(event) {
     event.preventDefault();
     search();
-    // alert(city);
-    // search for a city
   }
 
   function handleCityChange(event) {
@@ -47,7 +46,7 @@ export default function Overview(props) {
           id="submit-city-form"
         >
           <div className="row p-2">
-            <div className="col-6">
+            <div className="col-8">
               <input
                 type="text"
                 className="search-city form-control"
@@ -57,7 +56,7 @@ export default function Overview(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-4">
               <input
                 type="submit"
                 className="search-button btn btn-primary form-control"
@@ -65,18 +64,10 @@ export default function Overview(props) {
                 value="Search"
               />
             </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                className="current-button btn btn-primary form-control"
-                id="current-city-button"
-                value="Current"
-              />
-            </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast forecast={weatherData.city} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

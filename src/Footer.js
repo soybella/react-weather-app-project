@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="pt-2">
       <a
         href="https://github.com/soybella/SheCodes-Plus"
         target="_blank"
@@ -11,7 +11,7 @@ export default function Footer() {
       >
         Open-source code
       </a>{" "}
-      <span>by Isabella Lizarde</span>
+      <span className="footer-developer-name">by Isabella Lizarde ♥︎</span>
     </footer>
   );
 }

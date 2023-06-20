@@ -10,8 +10,7 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="container p-4">
-      <h2> Wire Frame Weather App Project</h2>
+    <div className="container p-5">
       <Overview defaultCity="Sacramento" />
     </div>
     <Footer />
