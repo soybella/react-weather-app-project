@@ -156,3 +156,9 @@ a:visited {
 #current-description:first-letter {
   text-transform: capitalize;
 }
+
+@media (max-width: 600px) {
+  .current-city-detail.current-information > * {
+    font-size: 12px;
+  }
+}
