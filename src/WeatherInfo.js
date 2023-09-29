@@ -23,12 +23,11 @@ export default function WeatherInfo(props) {
             <div className="current-city-detail current-information p-2">
               <div className="current-day" id="current-day-info">
                 <FormattedDate date={props.data.date} />
-              </div>{" "}
-              |
+              </div>
+
               <div className="current-description" id="current-description">
                 {props.data.description}
-              </div>{" "}
-              |
+              </div>
               <span className="current-humidity">
                 Humidity:{" "}
                 <span
@@ -37,8 +36,7 @@ export default function WeatherInfo(props) {
                 >
                   {props.data.humidity}%{" "}
                 </span>
-              </span>{" "}
-              |
+              </span>
               <span className="current-wind">
                 Wind:{" "}
                 <span className="wind-mph" id="current-city-wind-mph">

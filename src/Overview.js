@@ -45,8 +45,8 @@ export default function Overview(props) {
           className="form-inline"
           id="submit-city-form"
         >
-          <div className="row p-2">
-            <div className="col-md-8 col-sm-12">
+          <div className="form-container row p-2">
+            <div className="search-city-input col-md-8 col-sm-12">
               <input
                 type="text"
                 className="search-city form-control"
@@ -56,7 +56,7 @@ export default function Overview(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-md-4 col-sm-12">
+            <div className="search-button-input col-md-4 col-sm-12">
               <input
                 type="submit"
                 className="search-button btn btn-primary form-control"
